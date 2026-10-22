@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Christophe MALET</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="projets.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1>Christophe MALET</h1>
+        <p>Infirmier en reconversion vers la Data Santé</p>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+            <p id="confirmation" hidden>Message reçu ✓ Je vous réponds très vite !</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Christophe MALET</p>
+        <a href="https://github.com/Chris97421" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/christophe-malet-0925a1145/" target="_blank" rel="noopener">LinkedIn</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

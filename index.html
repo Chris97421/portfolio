@@ -1,10 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Christophe Malet - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christophe MALET - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <h1>Christophe Malet</h1>
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="projets.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1>Christophe MALET</h1>
+        <p>Infirmier en reconversion vers la Data Santé</p>
+    </header>
+
+    <main>
+        <section id="apropos">
+            <h2>À propos</h2>
+            <div class="moniteur">
+                <div class="photo">
+                    <img src="img/photo.jpg" alt="Portrait de Christophe Malet">
+                </div>
+                <svg class="ecg" viewBox="0 0 600 100" aria-hidden="true">
+                    <polyline
+                        points="0,50 150,50 170,50 180,30 190,50 210,50 220,10 230,90 240,50 260,50 275,40 290,50 450,50" />
+                    <text class="coeur-ecg" text-anchor="middle" dominant-baseline="central">&hearts;
+                        <animateMotion dur="2.5s" repeatCount="indefinite" keyTimes="0;0.75;1" keyPoints="0;1;1"
+                            calcMode="linear"
+                            path="M0,50 L150,50 170,50 180,30 190,50 210,50 220,10 230,90 240,50 260,50 275,40 290,50 450,50" />
+                    </text>
+                    <text class="code-ecg" x="470" y="50" dominant-baseline="central">&lt;/&gt;</text>
+                </svg>
+            </div>
+            <p>Réunionnais passionné d'informatique depuis toujours, j'ai d'abord choisi de soigner. Infirmier diplômé
+                en 2020, j'ai exercé trois ans en psychiatrie à Namur, où j'étais référent du dossier patient
+                informatisé, puis à Montpellier en SSR, en soins palliatifs et en intérim.</p>
+            <p>Sur le terrain, j'ai vu combien des logiciels mal pensés font perdre un temps précieux aux soignants, du
+                temps qui manque aux patients. En reconversion à Epitech, je me forme au développement et à la data pour
+                construire des outils utiles à ceux qui soignent.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Christophe MALET</p>
+        <a href="https://github.com/Chris97421" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/christophe-malet-0925a1145/" target="_blank" rel="noopener">LinkedIn</a>
+    </footer>
 </body>
+
 </html>

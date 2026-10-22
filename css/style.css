@@ -1,0 +1,227 @@
+:root {
+    --fond: #0b1426;
+    --texte: #e6edf5;
+    --vert-ecg: #2ee59d;
+    --fond-carte: #13213b;
+}
+
+body {
+    margin: 0;
+    background-color: var(--fond);
+    color: var(--texte);
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    color: var(--vert-ecg);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: var(--texte);
+}
+
+main,
+header,
+footer {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+header p {
+    color: var(--vert-ecg);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.2rem;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+#apropos img {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-radius: 50%;
+    border: 3px solid var(--vert-ecg);
+}
+
+h2 {
+    color: var(--vert-ecg);
+    border-bottom: 2px solid var(--vert-ecg);
+    padding-bottom: 8px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#parcours ul {
+    list-style: none;
+    border-left: 2px solid var(--vert-ecg);
+    padding-left: 20px;
+}
+
+#parcours time,
+#parcours span {
+    color: var(--vert-ecg);
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+#competences,
+#projets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+#competences div,
+#projets article {
+    background-color: var(--fond-carte);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+#competences h2,
+#projets h2 {
+    grid-column: 1 / -1;
+}
+
+#competences div:hover,
+#projets article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--vert-ecg);
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+#contact input,
+#contact textarea {
+    background-color: var(--fond-carte);
+    color: var(--texte);
+    border: 1px solid var(--vert-ecg);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    box-shadow: 0 0 15px var(--vert-ecg);
+}
+
+#contact button {
+    background-color: var(--vert-ecg);
+    color: var(--fond);
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+}
+
+#contact button:hover {
+    box-shadow: 0 0 15px var(--vert-ecg);
+}
+
+.photo {
+    position: relative;
+    display: inline-block;
+}
+
+.ecg {
+    width: 100%;
+    max-width: 600px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.moniteur {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ecg polyline {
+    fill: none;
+    stroke: var(--vert-ecg);
+    stroke-width: 3;
+    stroke-dasharray: 614;
+    stroke-dashoffset: 614;
+    animation: trace 2.5s linear infinite;
+}
+
+.coeur-ecg {
+    fill: var(--vert-ecg);
+    font-size: 24px;
+}
+
+@keyframes trace {
+    0% {
+        stroke-dashoffset: 614;
+    }
+
+    75% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.code-ecg {
+    fill: var(--vert-ecg);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    font-weight: bold;
+    animation: apparition 2.5s linear infinite;
+}
+
+@keyframes apparition {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
