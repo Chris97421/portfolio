@@ -14,23 +14,25 @@
 </head>
 
 <body>
-    <header>
+    <header class="compact">
         <nav aria-label="Navigation principale">
             <a href="index.html" aria-current="page">Accueil</a>
             <a href="projets.html">Projets</a>
             <a href="parcours.html">Parcours</a>
             <a href="contact.html">Contact</a>
         </nav>
-        <h1>Christophe MALET</h1>
-        <p>Du soin au code : j'apprends vite, je livre.</p>
     </header>
 
     <main>
-        <section id="apropos">
-            <h2>À propos</h2>
-            <div class="moniteur">
-                <div class="photo">
-                    <img src="img/photo.jpg" alt="Portrait de Christophe Malet">
+        <section class="hero">
+            <div class="hero-texte">
+                <p class="badge"><span class="point" aria-hidden="true"></span>Recherche d'alternance</p>
+                <h1>Christophe MALET</h1>
+                <p class="accroche">Du soin au code : j'apprends vite, je livre.</p>
+                <p class="pitch">Infirmier en reconversion vers le développement et la data, étudiant à Epitech.</p>
+                <div class="boutons">
+                    <a class="btn btn-plein" href="projets.html">Voir mes projets</a>
+                    <a class="btn btn-contour" href="contact.html">Me contacter</a>
                 </div>
                 <svg class="ecg" viewBox="0 0 600 100" aria-hidden="true">
                     <polyline
@@ -43,12 +45,23 @@
                     <text class="code-ecg" x="470" y="50" dominant-baseline="central">&lt;/&gt;</text>
                 </svg>
             </div>
+            <img class="photo-hero" src="img/photo.jpg" alt="Portrait de Christophe Malet" width="320" height="320">
+        </section>
+
+        <section class="chiffres" aria-label="En un coup d'œil">
+            <div class="chiffre"><b>6 ans</b><span>de soins en Belgique et en France</span></div>
+            <div class="chiffre"><b>Python · Django</b><span>API, SQL, web, Git</span></div>
+            <div class="chiffre"><b>Alternance</b><span>recherchée dès maintenant</span></div>
+        </section>
+
+        <section id="apropos">
+            <h2>À propos</h2>
             <p>Réunionnais passionné d'informatique depuis toujours, j'ai d'abord choisi de soigner. Infirmier diplômé
                 en 2020, j'ai exercé trois ans en psychiatrie à Namur, où j'étais référent du dossier patient
                 informatisé, puis à Montpellier en SSR, en soins palliatifs et en intérim.</p>
             <p>Sur le terrain, j'ai vu combien des logiciels mal pensés font perdre un temps précieux aux soignants, du
                 temps qui manque aux patients. En reconversion à Epitech, je me forme au développement et à la data pour
-                construire des outils utiles à ceux qui soignent.</p>
+                construire des outils utiles, en santé comme ailleurs.</p>
         </section>
 
     </main>
