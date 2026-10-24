@@ -4,47 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - Christophe MALET</title>
+    <meta name="description" content="Mes projets : Job Board, CV en ligne, piscines Epitech et montage de PC.">
+    <title>Projets | Christophe MALET</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b1426'/%3E%3Cpolyline points='5,55 30,55 40,30 52,80 62,55 95,55' fill='none' stroke='%232ee59d' stroke-width='8' stroke-linejoin='round'/%3E%3C/svg%3E">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav aria-label="Navigation principale">
             <a href="index.html">Accueil</a>
+            <a href="projets.html" aria-current="page">Projets</a>
             <a href="parcours.html">Parcours</a>
-            <a href="projets.html">Projets</a>
             <a href="contact.html">Contact</a>
         </nav>
-        <h1>Christophe MALET</h1>
-        <p>Infirmier en reconversion vers la Data Santé</p>
+        <h1>Mes projets</h1>
+        <p>Ce que j'ai construit, et ce que j'en ai appris</p>
     </header>
 
     <main>
         <section id="projets">
             <h2>Projets</h2>
+
+            <article>
+                <h3>Job Board (HireLoop)</h3>
+                <dl>
+                    <dt>Contexte et objectif</dt>
+                    <dd>Mon premier gros projet Epitech, en équipe : une application de gestion d'offres d'emploi avec une base SQL, une API REST et un front en JavaScript. Objectif : livrer une application complète qui fonctionne.</dd>
+                    <dt>Mon rôle</dt>
+                    <dd>Le back-end et l'API, en Python avec Django et Django REST Framework.</dd>
+                    <dt>Compétences et technologies</dt>
+                    <dd>Python · Django · Django REST Framework · SQL · API REST · Git · Docker · travail d'équipe</dd>
+                    <dt>Liens</dt>
+                    <dd><a href="https://github.com/Chris97421" target="_blank" rel="noopener">Mon GitHub</a></dd>
+                </dl>
+            </article>
+
             <article>
                 <h3>CV en ligne</h3>
-                <p>Ce site : mon CV interactif sur le thème du soin et de la data</p>
-                <p>HTML · CSS · JavaScript</p>
+                <dl>
+                    <dt>Contexte et objectif</dt>
+                    <dd>Bootcamp Web Epitech (4 jours), avec soutenance. Objectif : un CV en ligne original. J'ai choisi le concept du battement de cœur : un électrocardiogramme qui devient du code.</dd>
+                    <dt>Compétences et technologies</dt>
+                    <dd>HTML5 · CSS3 (animations, grid, variables) · JavaScript (formulaire) · SVG animé · Git</dd>
+                    <dt>Liens</dt>
+                    <dd><a href="https://github.com/EpitechMscProPromo2029/T-WEB-500-MPL-5-1-webd04-6" target="_blank" rel="noopener">Dépôt GitHub</a></dd>
+                </dl>
             </article>
+
             <article>
-                <h3>Piscine Python</h3>
-                <p>Deux semaines d'exercices intensifs à Epitech</p>
-                <p>Python · Linux · Git</p>
+                <h3>Piscines Python et Web</h3>
+                <dl>
+                    <dt>Contexte et objectif</dt>
+                    <dd>Deux piscines intensives à Epitech pour apprendre vite : Python, puis les bases du web, de la structure au design.</dd>
+                    <dt>Compétences et technologies</dt>
+                    <dd>Python · Linux · Git · HTML · CSS · JavaScript</dd>
+                    <dt>Liens</dt>
+                    <dd>Exercices dans les dépôts privés Epitech</dd>
+                </dl>
             </article>
-            <article>
-                <h3>Piscine Développement Web</h3>
-                <p>Bootcamp Epitech en cours : bases du web, de la structure au design</p>
-                <p>HTML · CSS · JavaScript</p>
-            </article>
+
             <article>
                 <h3>Montage de PC</h3>
-                <p>Conception et assemblage de configurations sur mesure</p>
-                <p>Hardware</p>
+                <dl>
+                    <dt>Contexte et objectif</dt>
+                    <dd>Passion personnelle : concevoir et assembler des configurations sur mesure, du choix des composants jusqu'à la mise en route.</dd>
+                    <dt>Compétences et technologies</dt>
+                    <dd>Matériel informatique · diagnostic · méthode et patience</dd>
+                </dl>
             </article>
         </section>
     </main>
@@ -53,6 +83,7 @@
         <p>&copy; 2026 Christophe MALET</p>
         <a href="https://github.com/Chris97421" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/christophe-malet-0925a1145/" target="_blank" rel="noopener">LinkedIn</a>
+        <p class="credits">Crédits : polices Inter et JetBrains Mono (Google Fonts, licence SIL OFL) · photo : portrait personnel · animation ECG : SVG réalisé pour ce site.</p>
     </footer>
 </body>
 

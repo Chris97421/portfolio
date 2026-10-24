@@ -4,23 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parcours - Christophe MALET</title>
+    <meta name="description" content="Mon parcours, ce que j'ai appris cette année et mes expériences.">
+    <title>Parcours | Christophe MALET</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b1426'/%3E%3Cpolyline points='5,55 30,55 40,30 52,80 62,55 95,55' fill='none' stroke='%232ee59d' stroke-width='8' stroke-linejoin='round'/%3E%3C/svg%3E">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav aria-label="Navigation principale">
             <a href="index.html">Accueil</a>
-            <a href="parcours.html">Parcours</a>
             <a href="projets.html">Projets</a>
+            <a href="parcours.html" aria-current="page">Parcours</a>
             <a href="contact.html">Contact</a>
         </nav>
-        <h1>Christophe MALET</h1>
-        <p>Infirmier en reconversion vers la Data Santé</p>
+        <h1>Mon parcours</h1>
+        <p>D'où je viens, ce que j'ai appris</p>
     </header>
 
     <main>
@@ -63,6 +65,42 @@
                     <p>En cours</p>
                 </li>
             </ul>
+        </section>
+
+        <section id="apprentissage">
+            <h2>Ce que j'ai appris cette année</h2>
+            <article>
+                <h3>Python</h3>
+                <p>De la piscine de deux semaines à une API construite avec Django REST Framework pour le Job Board.</p>
+            </article>
+            <article>
+                <h3>Linux et terminal</h3>
+                <p>Je partais de zéro. Aujourd'hui je travaille sous Ubuntu et j'utilise le terminal et Git au quotidien.</p>
+            </article>
+            <article>
+                <h3>Web</h3>
+                <p>HTML, CSS et JavaScript : un CV en ligne animé, puis ce portfolio multi-pages publié automatiquement sur GitHub Pages.</p>
+            </article>
+            <article>
+                <h3>Travail en équipe</h3>
+                <p>Mon premier projet collectif : répartir les tâches, partager le code avec Git, communiquer à distance avec l'équipe.</p>
+            </article>
+        </section>
+
+        <section id="hors-ecole">
+            <h2>Expériences hors projets d'école</h2>
+            <article>
+                <h3>Référent dossier patient informatisé</h3>
+                <p>En psychiatrie à Namur (2020-2023) : référent du dossier patient informatisé et tuteur de nombreux étudiants infirmiers.</p>
+            </article>
+            <article>
+                <h3>Intérim en soins</h3>
+                <p>À Montpellier (2023-2026) : changer de service et d'équipe régulièrement, être opérationnel vite.</p>
+            </article>
+            <article>
+                <h3>Montage de PC</h3>
+                <p>Une passion de longue date : choisir les composants, assembler, diagnostiquer.</p>
+            </article>
         </section>
 
         <section id="competences">
@@ -116,6 +154,7 @@
         <p>&copy; 2026 Christophe MALET</p>
         <a href="https://github.com/Chris97421" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.linkedin.com/in/christophe-malet-0925a1145/" target="_blank" rel="noopener">LinkedIn</a>
+        <p class="credits">Crédits : polices Inter et JetBrains Mono (Google Fonts, licence SIL OFL) · photo : portrait personnel · animation ECG : SVG réalisé pour ce site.</p>
     </footer>
 </body>
 
