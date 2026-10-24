@@ -172,7 +172,6 @@ nav {
     stroke-width: 3;
     stroke-dasharray: 614;
     stroke-dashoffset: 614;
-    animation: trace 2.5s linear infinite;
 }
 
 .coeur-ecg {

@@ -36,7 +36,10 @@
                 </div>
                 <svg class="ecg" viewBox="0 0 600 100" aria-hidden="true">
                     <polyline
-                        points="0,50 150,50 170,50 180,30 190,50 210,50 220,10 230,90 240,50 260,50 275,40 290,50 450,50" />
+                        points="0,50 150,50 170,50 180,30 190,50 210,50 220,10 230,90 240,50 260,50 275,40 290,50 450,50">
+                        <animate attributeName="stroke-dashoffset" dur="2.5s" repeatCount="indefinite"
+                            values="614;0;0" keyTimes="0;0.75;1" calcMode="linear" />
+                    </polyline>
                     <text class="coeur-ecg" text-anchor="middle" dominant-baseline="central">&hearts;
                         <animateMotion dur="2.5s" repeatCount="indefinite" keyTimes="0;0.75;1" keyPoints="0;1;1"
                             calcMode="linear"
