@@ -1,28 +1,28 @@
-# Portfolio de Christophe Malet
+# Christophe Malet's Portfolio
 
-Site multi-pages présentant mon parcours, mes projets et mes compétences. Projet « Portfolio » d'Epitech (pré-MSc).
+Multi-page website presenting my background, projects and skills. Epitech (pre-MSc) "Portfolio" project.
 
-**Site en ligne :** https://chris97421.github.io/portfolio/
+**Live site:** https://chris97421.github.io/portfolio/
 
 ## Concept
 
-« Du soin au code » : un infirmier en reconversion vers le développement et la data. Le fil conducteur visuel est un électrocardiogramme qui se dessine puis se transforme en `</>`.
+"From care to code": a nurse retraining as a developer and data professional. The visual thread is an electrocardiogram that draws itself, then turns into `</>`.
 
 ## Pages
 
-| Page | Contenu |
+| Page | Content |
 |---|---|
-| `index.html` | Accueil : photo, accroche, présentation |
-| `projets.html` | Fiches projet : contexte et objectif, compétences, liens |
-| `parcours.html` | Parcours, ce que j'ai appris cette année, expériences hors projets d'école, compétences |
-| `contact.html` | Coordonnées, téléchargement du CV (PDF), formulaire de contact |
+| `index.html` | Home: photo, tagline, introduction |
+| `projets.html` | Project sheets: context and goal, skills, links |
+| `parcours.html` | Background, what I learned this year, experience outside school projects, skills |
+| `contact.html` | Contact details, CV download (PDF), contact form |
 
 ## Technologies
 
-- HTML5 sémantique
+- Semantic HTML5
 - CSS3 (variables, grid, flexbox, animations, responsive)
-- JavaScript (confirmation du formulaire)
-- SVG animé pour l'ECG
+- JavaScript (form confirmation)
+- Animated SVG for the ECG
 
 ## Structure
 
@@ -39,37 +39,37 @@ portfolio/
 └── README.md
 ```
 
-## Lancer le site en local
+## Run the site locally
 
 ```bash
 cd portfolio
 python3 -m http.server 5500
 ```
 
-Puis ouvrir http://127.0.0.1:5500 (ou utiliser l'extension Live Server de VS Code).
+Then open http://127.0.0.1:5500 (or use the Live Server extension in VS Code).
 
-## Déploiement
+## Deployment
 
-Le site est publié avec **GitHub Pages** depuis la branche `main`. Chaque `git push` sur `main` déclenche automatiquement une nouvelle publication.
+The site is published with **GitHub Pages** from the `main` branch. Every `git push` to `main` automatically triggers a new deployment.
 
 ```bash
 git add .
-git commit -m "Mise à jour du portfolio"
+git commit -m "Update portfolio"
 git push
 ```
 
-## Accessibilité
+## Accessibility
 
-- Navigation identique sur toutes les pages, page courante signalée (`aria-current`)
-- Structure de titres cohérente, attributs `alt` sur les images
-- Champs de formulaire associés à leurs libellés
-- Site responsive (lisible sur mobile)
+- Identical navigation on every page, current page marked (`aria-current`)
+- Consistent heading structure, `alt` attributes on images
+- Form fields linked to their labels
+- Responsive site (readable on mobile)
 
-## Crédits
+## Credits
 
-- Polices : [Inter](https://rsms.me/inter/) et [JetBrains Mono](https://www.jetbrains.com/lp/mono/), via Google Fonts, licence SIL Open Font License
-- Photo : portrait personnel
-- Animation ECG : SVG réalisé pour ce site
+- Fonts: [Inter](https://rsms.me/inter/) and [JetBrains Mono](https://www.jetbrains.com/lp/mono/), via Google Fonts, SIL Open Font License
+- Photo: personal portrait
+- ECG animation: SVG created for this site
 
 ## Contact
 
