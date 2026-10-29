@@ -439,6 +439,40 @@ a.btn-contour:hover {
     }
 }
 
+/* ===== Finitions ===== */
+body {
+    background-image: radial-gradient(circle at 80% 0%, rgba(46, 229, 157, 0.12), transparent 45%);
+    background-repeat: no-repeat;
+}
+
+nav a {
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    border-bottom-color: var(--vert-ecg);
+}
+
+.chiffre,
+#competences div,
+#projets article,
+#apprentissage article,
+#hors-ecole article {
+    border: 1px solid rgba(46, 229, 157, 0.18);
+}
+
+.chiffre {
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.chiffre:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--vert-ecg);
+}
+
 @media (prefers-reduced-motion: reduce) {
     .point {
         animation: none;
@@ -454,4 +488,3 @@ a.btn-contour:hover {
         opacity: 1;
     }
 }
-
