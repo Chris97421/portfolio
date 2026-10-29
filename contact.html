@@ -36,7 +36,7 @@
             </ul>
             <a class="btn-cv" href="cv/CV_Christophe-Malet.pdf" download>Télécharger mon CV (PDF)</a>
             <h3>Ou écrivez-moi ici</h3>
-            <form>
+            <form action="https://formspree.io/f/xkjjzgqd" method="POST">
                 <label for="nom">Nom</label>
                 <input type="text" id="nom" name="nom" required>
 
@@ -49,9 +49,10 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
+                <input type="text" name="_gotcha" hidden tabindex="-1" autocomplete="off">
                 <button type="submit">Envoyer</button>
             </form>
-            <p id="confirmation" hidden>Votre messagerie s'ouvre avec le message prêt à partir : il ne reste qu'à valider l'envoi.</p>
+            <p id="confirmation" role="status" hidden></p>
         </section>
     </main>
 
