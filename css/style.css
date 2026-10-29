@@ -50,16 +50,6 @@ section {
     margin-bottom: 60px;
 }
 
-#apropos img {
-    width: 200px;
-    height: 200px;
-    max-width: 100%;
-    object-fit: cover;
-    object-position: 50% 20%;
-    border-radius: 50%;
-    border: 3px solid var(--vert-ecg);
-}
-
 h2 {
     color: var(--vert-ecg);
     border-bottom: 2px solid var(--vert-ecg);
@@ -147,23 +137,11 @@ nav {
     box-shadow: 0 0 15px var(--vert-ecg);
 }
 
-.photo {
-    position: relative;
-    display: inline-block;
-}
-
 .ecg {
     width: 100%;
     max-width: 600px;
     flex: 1;
     min-width: 200px;
-}
-
-.moniteur {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
 }
 
 .ecg polyline {
@@ -177,20 +155,6 @@ nav {
 .coeur-ecg {
     fill: var(--vert-ecg);
     font-size: 24px;
-}
-
-@keyframes trace {
-    0% {
-        stroke-dashoffset: 614;
-    }
-
-    75% {
-        stroke-dashoffset: 0;
-    }
-
-    100% {
-        stroke-dashoffset: 0;
-    }
 }
 
 .code-ecg {
